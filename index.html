@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/evo-calendar.orange-coral.css">
+    <link rel="stylesheet" href="css/evo-calendar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <a href="darkmode.html"><img src="img/half-moon.png" alt="dark-mode"></a>
+        <div id="calendar"></div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/evo-calendar.min.js"></script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+
+
+                theme: 'Orange Coral',
+                calendarEvents: [
+                    {
+                        id: 'NewYear',
+                        name: "New Year",
+                        date: "January/1/2020",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "New Year is the time or day at which a new calendar year begins and the calendar's year count increments by one.", // Event description (optional)
+                    },
+                    {
+                        id: 'Lohri',
+                        name: "Lohri",
+                        date: "January/13/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "The festival of Lohri, which is celebrated primarily by Sikhs and Hindus all across the India, marks the end of winter season and is traditionally believed to welcome the sun to the northern hemisphere. Observed a night before Makar Sankranti, this occasion involves a Puja Parikrama around the bonfire with prasad.",
+                    },
+                    {
+                        id: 'Pongal,',
+                        name: "Pongal",
+                        date: "January/14/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "It is an ancient festival of South India, particularly Tamils. It is basically a harvest festival which is celebrated for four-day-long in Tamil Nadu",
+                    },
+                    {
+                        id: 'MakarSankranti,',
+                        name: "Makar Sankranti",
+                        date: "January/14/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Makar Sankranti or Uttarayan or Maghi or simply Sankranti, is a festival day in the Hindu calendar, dedicated to the deity Surya (sun). ... It marks the first day of the sun's transit into Makara rashi (Capricorn), marking the end of the month with the winter solstice and the start of longer days.",
+                    },
+                    {
+                        id: 'GuruGovindSinghJayanti,',
+                        name: "Guru Govind Singh Jayanti",
+                        date: "January/20/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Guru Gobind Singh Jayanti (also spelled Govind Singh) is a Sikh festival that commemorates the birthday of Guru Gobind Singh Ji, the tenth Guru of the Sikhs. It is a religious celebration in which prayers for prosperity are offered.",
+                    },
+                    {
+                        id: 'Republicday',
+                        name: "Republic  Day",
+                        date: "January/26/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Republic Day is a day to remember when the Constitution of India officially came into force on January 26, 1950.",
+                    },
+                    {
+                        id: 'PulwamaMartyrDay',
+                        name: "Pulwama Martyr Day",
+                        date: "February/14/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "A 'black day' in the history of India - February 14, 2021 marks two years of the Pulwama terror attack, when 40 Indian soldiers were martyred in one of the worst terror attacks in Jammu and Kashmir.",
+                    },
+                    {
+                        id: 'ValentineDay',
+                        name: "Valentine Day ❤❤",
+                        date: "February/14/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: " Valentine's Day is a holiday when lovers express their affection with greetings and gifts. It is also called St. Valentine's Day. The holiday has expanded to express affection between relatives and friends.",
+                    },
+
+                    {
+                        id: 'vasantpanchami',
+                        name: "Vasant Panchami",
+                        date: "February/16/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: " Vasant Panchami is a festival that marks the beginning of preparations for spring season. It is celebrated by people in various ways depending on the region. ... For many Hindus, Vasant Panchami is the festival dedicated to goddess Saraswati who is their goddess of knowledge, language, music and all arts.",
+                    },
+
+                    {
+                        id: 'Shivaji Jayanti',
+                        name: "Shivaji Jayanti",
+                        date: "February/19/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "This festival is celebrated on February 19 (according to Julian date), celebrating the birth anniversary of Chhatrapati Shivaji Maharaj, the first Chhatrapati and founder of the Maratha Empire",
+                    },
+
+                    {
+                        id: 'Hazarat Ali Birthday',
+                        name: "Hazarat Ali Birthday",
+                        date: "February/26/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "He is one of the central figures in Shia Islam and is regarded as the rightful immediate successor to Muhammad as an Imam by Shia Muslims. Ali was born inside the Kaaba in Mecca, the holiest place in Islam, to Abu Talib and Fatimah bint Asad. He was the first male who accepted Islam under Muhammad's watch.",
+                    },
+
+                    {
+                        id: 'Guru Ravidas Jayanti',
+                        name: "Guru Ravidas Jayanti",
+                        date: "February/27/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Ravidas was an Indian mystic poet-sant of the Bhakti movement and founder of Ravidassia religion during the 15th to 16th century CE. ... He was a poet-saint, social reformer and a spiritual figure. The life details of Ravidas are uncertain and contested. Scholars believe he was born in 1450 CE, in Chamar caste.",
+                    },
+
+                    {
+                        id: 'Maharishi Dayanand Saraswati Jayanti',
+                        name: "Maharishi Dayanand Saraswati Jayanti",
+                        date: "March/8/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "He believed in the infallible authority of the Vedas. Dayananda advocated the doctrine of Karma and Reincarnation. He emphasized the Vedic ideals of brahmacharya, including celibacy and devotion to God.",
+                    },
+
+                    {
+                        id: 'Maha Shivaratri',
+                        name: "Maha Shivaratri",
+                        date: "March/11/2021",
+                        type: "holiday",
+                        everyYear: false,
+                        description: "Maha Shivaratri is a Hindu festival celebrated annually in honour of the god Shiva. The name also refers to the night when Shiva performs the heavenly dance. ... It is a major festival in Hinduism, and this festival is solemn and marks a remembrance of overcoming darkness and ignorance in life and the world.",
+                    },
+
+                    {
+                        id: 'Holika Dahan',
+                        name: "Holika Dahan",
+                        date: "March/28/2021",
+                        type: "holiday",
+                        everyYear: false,
+                        description: "Holika dahan. On the eve of Holi, typically at or after sunset, the pyre is lit, signifying Holika Dahan. The ritual symbolises the victory of good over evil. People sing and dance around the fire. People also perform parikrama of fire.",
+                    },
+
+                    {
+                        id: 'Holi',
+                        name: "Holi",
+                        date: "March/29/2021",
+                        type: "holiday",
+                        everyYear: false,
+                        description: "Holi is the festival of love or colors that signifies the victory of superior over immoral. Holi festival is commemorate on February end or starting March.",
+                    },
+
+                    {
+                        id: 'Good Friday',
+                        name: "Good Friday",
+                        date: "April/2/2021",
+                        type: "holiday",
+                        everyYear: false,
+                        description: "Good Friday is a Christian holiday commemorating the crucifixion of Jesus and his death at Calvary. It is observed during Holy Week as part of the Paschal Triduum on the Friday preceding Easter Sunday, and may coincide with the Jewish observance of Passover.",
+                    },
+
+                    {
+                        id: 'Easter Day',
+                        name: "Easter Day",
+                        date: "April/4/2021",
+                        type: "holiday",
+                        everyYear: false,
+                        description: "Easter, also called Pascha (Aramaic, Greek, Latin) or Resurrection Sunday, is a festival and holiday commemorating the resurrection of Jesus from the dead, described in the New Testament as having occurred on the third day after his burial following his crucifixion by the Romans at Calvary c. 30 AD.",
+                    },
+
+                    {
+                        id: 'Ambedkar Jayanti',
+                        name: "Ambedkar Jayanti",
+                        date: "April/14/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Ambedkar Jayanti or Bhim Jayanti is an annual festival observed on 14 April to commemorate the memory of B. R. Ambedkar, Indian polymath, chairman of constituent draft assembly and civil rights activist. It marks Dr. Babasaheb Ambedkar's birthday who was born on 14 April 1891.",
+                    },
+
+                    {
+                        id: 'Ram Navami',
+                        name: "Ram Navami",
+                        date: "April/21/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Rama Navami is a spring Hindu festival that celebrates the birthday of the Hindu God Lord Rama. ... The festival celebrates the descent of Vishnu as shri Rama avatar, through his birth to King Dasharatha and Queen Kausalya in Ayodhya.",
+                    },
+
+                    {
+                        id: 'Mahavir Jayanti',
+                        name: "Mahavir Jayanti",
+                        date: "April/25/2021",
+                        type: "holiday",
+                        everyYear: true,
+                        description: "Mahavir Jayanti is one of the most important festivals in Jainism, and it celebrates the birth anniversary of the 24th Tirthankara Mahavir, who played a significant role in preaching Jainism.",
+                    },
+
+
+                ]
+
+            })
+        })
+    </script>
+</body>
+
+</html>
